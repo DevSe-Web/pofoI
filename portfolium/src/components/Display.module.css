@@ -1,0 +1,14 @@
+.body {
+    margin-left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    width: var(--display-width);
+}
+
+.background {
+    background-color: rgb(0, 0, 0);
+}
+
+.ls {
+   width: var(--display-width);
+}

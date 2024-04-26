@@ -1,0 +1,45 @@
+.body {
+    position: relative;
+    display: flex;
+    height: 30px;
+    padding: 1em;
+    align-items: center;
+    margin: 1em 5em;
+    justify-content:space-between;
+}
+
+/* -----------------------Left----------------------- */
+.motionIcon {
+}
+
+.left {
+    float: left;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    color: var(--modern-text)
+}
+
+.left li:hover {
+    cursor: pointer;
+    transition: font-size 0.2s ease;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* -----------------------Center----------------------- */
+.center {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+/* -----------------------Right----------------------- */
+.right {
+    float: right;
+    font-size: 1.0em;
+    color: var(--modern-text)
+}
