@@ -1,0 +1,15 @@
+.info_container {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(238, 205, 205, 0.3);
+    border-radius: 1vh;
+}
+
+.info_container img {
+    border-radius: 1vh;
+}
+
+.info {
+    margin: 1em;
+    width: 200px;
+}

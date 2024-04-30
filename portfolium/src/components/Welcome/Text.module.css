@@ -1,0 +1,32 @@
+.welcome_animation span {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.trans_text {
+    color: wheat;
+}
+
+.trans_text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1d2025;
+    border-left: 2px solid #AB3A2C;
+    animation: animate 3s steps(8) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 1px);
+    }
+  
+    100%{
+        left: 0%;
+    }
+  }
