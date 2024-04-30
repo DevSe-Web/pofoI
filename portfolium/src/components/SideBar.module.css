@@ -1,5 +1,4 @@
 .body {
-    position: fixed;
     width: var(--sidebar-width);
     height: 100vh;
     left: 0;
@@ -9,17 +8,16 @@
 }
 
 /* ----------------Profile---------------- */
-.profile {
-    position: relative;
-    width: var(--sidebar-width);
-    height: var(--sidebar-width);;
+.profile_container {
     display: flex;
+    width: var(--sidebar-width);
+    height: var(--sidebar-width);
     justify-content: center;
     align-items: center;
     gap: 0.3em;
-  }
-  
-  .profile::before {
+}
+
+.profile_container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -28,8 +26,8 @@
     height: var(--sidebar-width);
     background: linear-gradient(45deg, rgb(43, 97, 118), rgb(9, 62, 136));
     filter: blur(2.5px);
-    z-index: -1; 
-  }
+    z-index: -1;
+}
 
 /* ----------------Profile---------------- */
 .body ul {
@@ -38,18 +36,20 @@
 
 /* ----------------rate---------------- */
 .posting_rate_container {
-    display: gird;
-    grid-template-columns: 1fr 1fr;
     margin: 1em;
 }
+
 .posting_rate {
     font-family: var(--main-font-family);
     font-weight: bold;
     background: linear-gradient(45deg, rgb(142, 225, 250), rgb(0, 145, 255));
-    background-clip: text; /*요소의 배경을 텍스트 부분에만 적용하도록 설정*/
+    background-clip: text;
+    /*요소의 배경을 텍스트 부분에만 적용하도록 설정*/
     -webkit-background-clip: text;
-    color: transparent; /*텍스트 색을 transparent로 설정*/
+    color: transparent;
+    /*텍스트 색을 transparent로 설정*/
 }
+
 /* ----------------List---------------- */
 .list_container {
     display: grid;
@@ -59,6 +59,7 @@
     font-family: var(--main-font-family);
     color: gray;
 }
+
 .list_item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -68,12 +69,15 @@
     padding: 0 1em;
     border-radius: 1vh;
 }
+
 .list_item:hover {
     transition: background-color 0.3s ease;
     background-color: rgb(241, 240, 143);
     cursor: pointer;
 }
+
 .list_item img {
     width: 40px;
 }
+
 /* ----------------List---------------- */
