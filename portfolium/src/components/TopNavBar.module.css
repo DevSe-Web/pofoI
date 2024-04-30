@@ -1,11 +1,8 @@
 .body {
     position: relative;
     display: flex;
-    height: 30px;
-    padding: 1em;
     align-items: center;
-    margin: 1em 5em;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 /* -----------------------Left----------------------- */
@@ -13,7 +10,6 @@
 }
 
 .left {
-    float: left;
     padding: 0;
     list-style: none;
     display: flex;
@@ -39,7 +35,6 @@
 
 /* -----------------------Right----------------------- */
 .right {
-    float: right;
     font-size: 1.0em;
     color: var(--modern-text)
 }

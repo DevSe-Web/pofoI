@@ -1,5 +1,4 @@
 import styles from './TopNavBar.module.css';
-import MotionIcon from '../images/icons8-cd.gif';
 
 const TopNavBar = () => {
 
@@ -9,7 +8,7 @@ const TopNavBar = () => {
 
       <ul className={styles.left}>
         {/* 토글 */}
-        <li><img className={styles.motionIcon} src={MotionIcon} alt="눈이내려요~" /></li>
+        <li><i className="fa-thin fa-circle"></i></li>
         {/* Skill */}
         <li>Skill</li>
         {/* Current Interest */}
@@ -20,7 +19,7 @@ const TopNavBar = () => {
 
       {/* Logo - Center */}
       <div className={styles.center}>
-        <span className="Pofo">pofo</span><span className="I">I</span>
+        <span className="pofo">pofo</span><span className="I">I</span>
       </div>
 
       {/* Questioins? */}
