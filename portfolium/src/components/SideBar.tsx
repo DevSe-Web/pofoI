@@ -3,7 +3,6 @@ import styles from './SideBar.module.css';
 import htmlIcon from '../images/icons8-html-48.png';
 import cssIcon from '../images/icons8-css-48.png';
 import jsIcon from '../images/icons8-js-48.png';
-import newsIcon from '../images/icons8-뉴스-40.svg';
 import codingIcon from '../images/icons8-코딩-40.png';
 
 // list 타입
@@ -45,12 +44,6 @@ const SideBar = () => {
       icon: codingIcon,
       title: "Coding Test",
       items: ["Queue", "Stack", "List", "Graph"],
-      description: ""
-    },
-    5: {
-      icon: newsIcon,
-      title: "IT News",
-      items: [],
       description: ""
     },
   }
