@@ -1,5 +1,6 @@
 .body {
     width: 100%;
+    display: flex;
     overflow-x:hidden;
     margin: 0 auto;
 }
