@@ -58,8 +58,8 @@ const SideBar = () => {
   return (
     <div className={styles.body}>
       {/* Profile */}
-      <div className={styles.profile}>
-        <span className="Pofo">pofo</span><span className="I">I</span>
+      <div className={styles.profile_container}>
+        <span className="pofo">pofo</span><span className="I">I</span>
       </div>
 
       {/* Counting number of posting */}
