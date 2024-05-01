@@ -1,7 +1,10 @@
 import styles from './TopNavBar.module.css';
+import sidebar from '../images/bars-solid.svg';
+import { useOnOffStore } from '../zustand/onoffStore';
 
 const TopNavBar = () => {
 
+  const { setStatus } = useOnOffStore();
 
   return (
     <div className={styles.body}>
@@ -24,7 +27,7 @@ const TopNavBar = () => {
 
       {/* Questioins? */}
       <div className={styles.right}>
-        <span>More</span>
+        <img src={sidebar} alt="sidebar" width={20} onClick={setStatus} className={styles.sidebar}/>
       </div>
     </div>
   )
