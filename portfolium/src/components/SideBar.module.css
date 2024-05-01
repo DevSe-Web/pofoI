@@ -1,7 +1,10 @@
 .body {
+    position: absolute;
     width: var(--sidebar-width);
+    background: linear-gradient(0deg, rgb(43, 97, 118, 0.5), rgb(255, 255, 255, 0));
+    z-index: 0;
     height: 100vh;
-    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
     overflow-y: auto;
@@ -21,11 +24,12 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: var(--sidebar-width);
     height: var(--sidebar-width);
     background: linear-gradient(45deg, rgb(43, 97, 118), rgb(9, 62, 136));
-    filter: blur(2.5px);
+    border-radius: 10cm;
+    filter: blur(4px);
     z-index: -1;
 }
 
@@ -44,10 +48,11 @@
     font-weight: bold;
     background: linear-gradient(45deg, rgb(142, 225, 250), rgb(0, 145, 255));
     background-clip: text;
-    /*요소의 배경을 텍스트 부분에만 적용하도록 설정*/
     -webkit-background-clip: text;
+    /*요소의 배경을 텍스트 부분에만 적용하도록 설정*/
     color: transparent;
     /*텍스트 색을 transparent로 설정*/
+
 }
 
 /* ----------------List---------------- */
@@ -57,7 +62,7 @@
     align-items: center;
     padding: 0;
     font-family: var(--main-font-family);
-    color: gray;
+    color: rgb(155, 206, 228);
 }
 
 .list_item {
@@ -71,8 +76,8 @@
 }
 
 .list_item:hover {
-    transition: background-color 0.3s ease;
-    background-color: rgb(241, 240, 143);
+    transition: background-color 1s ease;
+    background-color: rgb(241, 240, 143, 0.5);
     cursor: pointer;
 }
 

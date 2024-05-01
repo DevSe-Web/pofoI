@@ -1,13 +1,16 @@
 .body {
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.body.activeSide {
+    width: var(--display-width);
 }
 
 /* -----------------------Left----------------------- */
-.motionIcon {
-}
+.motionIcon {}
 
 .left {
     padding: 0;
@@ -16,7 +19,7 @@
     align-items: center;
     gap: 1em;
     font-size: 1.2em;
-    color: var(--modern-text)
+    color: var(--modern-text);
 }
 
 .left li:hover {
@@ -34,7 +37,7 @@
 }
 
 /* -----------------------Right----------------------- */
-.right {
-    font-size: 1.0em;
-    color: var(--modern-text)
+.right img:hover {
+    cursor: pointer;
+    width: 22;
 }
