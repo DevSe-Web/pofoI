@@ -55,29 +55,26 @@ const Profile = () => {
           <span className='list_h2'>History log...</span>
           {/* SCHOOL */}
           <div>
-            <div className={styles.title_h3}><img src={graduation} alt="graduation" width={24} /><span className='list_h3'>SCHOOL</span></div>
+            <div className={styles.title_h3}><span className='list_h3'>SCHOOL</span></div>
             <ul className={styles.sch_list}>
               {/* WILL 항목을 제외한 배열 맵핑 */}
               {schObj.filter(item => item.status != 'WILL').map(
                 (item: any, index: number) => {
-                  return (
-                    <li key={index}>
-                      {/* {handleStatus(item.status && item.status)} */}
-
-                      <span className={styles.sch}>{item.name}{item.lv}</span>
-                    </li>
-                  )
+                  return <li key={index}>
+                    {/* {handleStatus(item.status && item.status)} */}
+                    <span className={styles.sch}>{item.name}{item.lv}</span>
+                  </li>
                 })
               }
             </ul>
           </div>
           {/* SKILL */}
           <div>
-            <div className={styles.title_h3}><img src={code} alt="code" width={24} /><span className='list_h3'>SKILL</span></div>
+            <div className={styles.title_h3}><span className='list_h3'>SKILL</span></div>
           </div>
           {/* PROJECT */}
           <div>
-            <div className={styles.title_h3}><img src={project_star} alt="project_star" width={24} /><span className='list_h3'>PROJECT</span></div>
+            <div className={styles.title_h3}><span className='list_h3'>PROJECT</span></div>
           </div>
         </div>
       </div>
