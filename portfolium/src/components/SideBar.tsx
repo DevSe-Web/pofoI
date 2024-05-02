@@ -66,7 +66,7 @@ const SideBar = () => {
   }
 
   return (
-    <div className={styles.body}>
+    <div className={`${styles.body} ${status && styles.open}`}>
       {/* Profile */}
       <div className={styles.profile_container}>
         <span className="pofo">pofo</span><span className="I">I</span>

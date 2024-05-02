@@ -8,8 +8,11 @@ import graduation from '../../images/graduation-cap-solid.svg';
 import project_star from '../../images/star.svg';
 import code from '../../images/code.svg';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
+
+  const navigate = useNavigate();
 
   const schObj = [
     { lv: '초등학교', name: "범서", status: "DONE" },
@@ -43,7 +46,7 @@ const Profile = () => {
             <li><img src={birthday} alt="birthday" width={24} /> <span>2001.12.26</span></li>
             <li><img src={phone_call} alt="phone_call" width={24} /> <span>010-2335-5430</span></li>
             <li><img src={mail} alt="mail" width={24} /> <span>djadjawltjr@gmail.com</span></li>
-            <li><img src={instagram} alt="instagram" width={24} /><span>devum01</span></li>
+            <li><img src={instagram} alt="instagram" width={24} /><span>instagram.com/devum01</span></li>
           </ul>
         </div>
 

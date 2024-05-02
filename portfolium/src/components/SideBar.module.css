@@ -1,15 +1,20 @@
 .body {
     position: absolute;
     width: var(--sidebar-width);
-    background: linear-gradient(0deg, rgb(43, 97, 118, 0.5), rgb(255, 255, 255, 0));
+    background: linear-gradient(-90deg, rgba(43, 97, 118, 0.5), rgba(255, 255, 255, 0));
+    padding: 10px;
     z-index: 0;
     height: 100vh;
-    right: 0;
+    right: -var(--sidebar-width); /* 초기에 화면 밖으로 숨겨둠 */
     top: 0;
     bottom: 0;
     overflow-y: auto;
+    transition: right 800ms cubic-bezier(.8, 0, .33, 1); /* 이동 효과를 추가합니다. */
 }
 
+.body.open {
+    right: 0; /* 사이드바를 화면 안쪽으로 이동시킵니다. */
+}
 /* ----------------Profile---------------- */
 .profile_container {
     display: flex;
@@ -27,8 +32,8 @@
     right: 0;
     width: var(--sidebar-width);
     height: var(--sidebar-width);
-    background: linear-gradient(45deg, rgb(43, 97, 118), rgb(9, 62, 136));
-    border-radius: 10cm;
+    background: linear-gradient(90deg, rgb(1, 89, 127), rgb(7, 44, 114));
+    border-radius: 100%;
     filter: blur(4px);
     z-index: -1;
 }

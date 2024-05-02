@@ -4,10 +4,10 @@ import { useOnOffStore } from '../zustand/onoffStore';
 
 const TopNavBar = () => {
 
-  const { setStatus } = useOnOffStore();
+  const { status, setStatus } = useOnOffStore();
 
   return (
-    <div className={styles.body}>
+    <div className={`${styles.body} ${status && styles.activeSide}`}>
 
       <ul className={styles.left}>
         {/* 토글 */}
@@ -27,7 +27,7 @@ const TopNavBar = () => {
 
       {/* Questioins? */}
       <div className={styles.right}>
-        <img src={sidebar} alt="sidebar" width={20} onClick={setStatus} className={styles.sidebar}/>
+        <img src={sidebar} alt="sidebar" width={20} onClick={setStatus} className={styles.sidebar} />
       </div>
     </div>
   )
