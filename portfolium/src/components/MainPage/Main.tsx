@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Display from "./components/Display";
-import SideBar from "./components/SideBar";
+import Display from "../MainDisplay/Display";
+import SideBar from "../SideBar/SideBar";
 import styles from "./Main.module.css";
-import { useOnOffStore } from "./zustand/onoffStore";
+import { useOnOffStore } from "../../zustand/onoffStore";
 
 
 export default function Main() {

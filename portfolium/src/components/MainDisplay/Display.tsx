@@ -1,9 +1,9 @@
-import TopNavBar from "./TopNavBar";
+import TopNavBar from "../TopNavBar/TopNavBar";
 import styles from "./Display.module.css";
-import Text from "./Welcome/Text";
-import Profile from "./ProfileModule/Profile";
+import Text from "../Welcome/Text";
+import Profile from "../ProfileModule/Profile";
 import { useState, useEffect } from "react";
-import { useOnOffStore } from "../zustand/onoffStore";
+import { useOnOffStore } from "../../zustand/onoffStore";
 
 
 
