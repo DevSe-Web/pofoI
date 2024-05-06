@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './SideBar.module.css';
-import htmlIcon from '../images/icons8-html-48.png';
-import cssIcon from '../images/icons8-css-48.png';
-import jsIcon from '../images/icons8-js-48.png';
-import codingIcon from '../images/icons8-코딩-40.png';
+import htmlIcon from '../../images/icons8-html-48.png';
+import cssIcon from '../../images/icons8-css-48.png';
+import jsIcon from '../../images/icons8-js-48.png';
+import codingIcon from '../../images/icons8-코딩-40.png';
 import { useOnOffStore } from '../../zustand/onoffStore';
 import { useEffect } from 'react';
 

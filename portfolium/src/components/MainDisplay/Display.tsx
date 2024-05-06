@@ -1,9 +1,10 @@
 import TopNavBar from "../TopNavBar/TopNavBar";
 import styles from "./Display.module.css";
-import Text from "../Welcome/Text";
+import Text from "../WelcomeText/Text";
 import Profile from "../ProfileModule/Profile";
 import { useState, useEffect } from "react";
 import { useOnOffStore } from "../../zustand/onoffStore";
+import bg from "../../images/_.gif";
 
 
 
@@ -17,7 +18,7 @@ const Display = () => {
 
   return (
     <div className={`${styles.body} ${status && styles.activeSide}`}>
-      <div className={styles.background_container}></div>
+      <img src={bg} alt="bg" className={styles.background_container}></img>
       <div className={styles.background_blur}></div>
       <div className={styles.view_container}>
         <TopNavBar />

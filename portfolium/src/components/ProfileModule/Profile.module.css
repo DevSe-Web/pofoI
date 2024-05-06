@@ -3,9 +3,10 @@
     min-height: 300px;
     max-width: 800px;
     max-height: 400px;
-    background-color: rgb(238, 205, 205, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 1vh;
     display: flex;
+    font-family: var(--main-font-family);
 }
 
 
@@ -21,6 +22,10 @@
     border-right: 1px solid rgb(238, 205, 205, 0.3);
 }
 
+.img_container {
+    display: flex;
+    justify-content: center;
+}
 .contact img {
     border-radius: 1vh;
 }

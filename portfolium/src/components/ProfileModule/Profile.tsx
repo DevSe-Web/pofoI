@@ -4,11 +4,8 @@ import instagram from '../../images/instagram.svg';
 import mail from '../../images/mail.svg';
 import phone_call from '../../images/phone-call.svg';
 import birthday from '../../images/user-plus.svg';
-import graduation from '../../images/graduation-cap-solid.svg';
-import project_star from '../../images/star.svg';
-import code from '../../images/code.svg';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Profile = () => {
 
@@ -38,15 +35,22 @@ const Profile = () => {
 
         {/* left info */}
         <div className={styles.contact}>
-          <img src={profileImage} alt="프로필 사진" width={150} />
+          <div className={styles.img_container}>
+            <img src={profileImage} alt="프로필 사진" width={150} />
+          </div>
           {/* INFORMATION */}
           <span className='list_h2'>INFO</span>
           <ul className={styles.contact_list}>
             {/* ✅Todo : create onClick event */}
-            <li><img src={birthday} alt="birthday" width={24} /> <span>2001.12.26</span></li>
-            <li><img src={phone_call} alt="phone_call" width={24} /> <span>010-2335-5430</span></li>
-            <li><img src={mail} alt="mail" width={24} /> <span>djadjawltjr@gmail.com</span></li>
-            <li><img src={instagram} alt="instagram" width={24} /><span>instagram.com/devum01</span></li>
+            <li><img src={birthday} alt="birthday" width={24} />
+              <span>2001.12.26</span></li>
+            <li><img src={phone_call} alt="phone_call" width={24} />
+              <span>010-2335-5430</span></li>
+            <li><img src={mail} alt="mail" width={24} />
+              djadjawltjr@gmail.com</li>
+            <li><Link to="https://www.instagram.com/devum01">
+              <img src={instagram} alt="instagram" width={24} />
+            </Link>devum01</li>
           </ul>
         </div>
 

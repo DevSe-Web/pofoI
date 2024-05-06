@@ -37,6 +37,10 @@
 
 /* ---------------------------- Initialize ---------------------------- */
 /* reset.css */
+* {
+    font-family: var(--main-font-family);
+}
+
 html,
 body,
 div,
@@ -146,7 +150,8 @@ body {
 }
 
 ol,
-ul {
+ul,
+li {
     list-style: none;
 }
 

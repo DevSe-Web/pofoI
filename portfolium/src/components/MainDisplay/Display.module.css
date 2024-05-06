@@ -10,8 +10,8 @@
 }
 
 .background_container {
+    position: sticky;
     height: 100vh;
-    background-image: url('../images/_.gif');
     background-size: cover;
     background-position: center;
     z-index: -3;

@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Text.module.css';
 
+// P - Potential (잠재력) <- 왼쪽부터
+// O - Opportunity (기회) <- 오른쪽부터
+// F - Future (미래) <- 가운데부터
+// O - Originality (독창성)
+// I - Innovation (혁신)
+// portfolio I <- 텍스트가 쳐지고 마지막에 밑죽 뽝!
+
 const Text = () => {
   const [text, setText] = useState('Coder');
 
@@ -30,6 +37,7 @@ const Text = () => {
       <span>Welcome !</span>
       <span>I'm</span>
       <span className={styles.trans_text}>{text}</span>
+      <span id="text"></span>
     </div>
   );
 }

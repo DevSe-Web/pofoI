@@ -1,5 +1,5 @@
 import styles from './TopNavBar.module.css';
-import sidebar from '../images/bars-solid.svg';
+import sidebar from '../../images/bars-solid.svg';
 import { useOnOffStore } from '../../zustand/onoffStore';
 
 const TopNavBar = () => {
