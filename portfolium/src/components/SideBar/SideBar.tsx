@@ -5,7 +5,7 @@ import cssIcon from '../../images/icons8-css-48.png';
 import jsIcon from '../../images/icons8-js-48.png';
 import codingIcon from '../../images/icons8-코딩-40.png';
 import { useOnOffStore } from '../../zustand/onoffStore';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // list 타입
 type ListItem = {
@@ -20,6 +20,7 @@ const SideBar = () => {
   let navigate = useNavigate();
 
   const { status, setStatusOff } = useOnOffStore();
+  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -68,9 +69,17 @@ const SideBar = () => {
   return (
     <div className={`${styles.body} ${status && styles.open}`}>
       {/* Profile */}
-      <div className={styles.profile_container}>
-        <span className="pofo">pofo</span><span className="I">I</span>
+      <div className={styles.profile_container} onMouseOver={() => setIsLogin(true)} onMouseLeave={() => setIsLogin(false)}>
+        {isLogin ?
+          <span className="Login">Login?</span>
+          :
+          <>
+            <span className="pofo">pofo</span>
+            <span className="I">I</span>
+          </>
+        }
       </div>
+
 
       {/* Counting number of posting */}
       <div className={styles.posting_rate_container}>

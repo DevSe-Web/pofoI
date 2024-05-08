@@ -35,6 +35,30 @@
     }
 }
 
+/* 폰트 사이즈가 1.6 ~ 2.4까지 커졌다줄어졌다 반복합니다. */
+.Login {
+    color: var(--tipical-text-yellow);
+    font-family: var(--main-font-family);
+    font-size: 1.6em;
+    font-weight: bold;
+    animation: zoomNzoomOut 2s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes zoomNzoomOut {
+
+    0%,
+    100% {
+        font-size: 1.6em;
+        transform: rotate(20deg);
+    }
+
+    50% {
+        font-size: 2.4em;
+        transform: rotate(-30deg);
+    }
+}
+
 /* ---------------------------- Initialize ---------------------------- */
 /* reset.css */
 * {
