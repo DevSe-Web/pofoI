@@ -1,8 +1,12 @@
+import styles from './Login.module.css';
+
 const Login = () => {
 
   return (
-    <div>
+    <div className='modal_overlay'>
+      <div className='modal_container'>
 
+      </div>
     </div>
   )
 }
