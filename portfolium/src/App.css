@@ -211,3 +211,26 @@ table {
     font-size: 16px;
     font-weight: bold;
 }
+
+/* -------Modal------- */
+.modal_overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 107);
+    opacity: 0.5;
+    z-index: 999;
+}
+
+.modal_conatiner {
+    min-width: 600px;
+    max-width: 80vw;
+    min-height: 600px;
+    max-width: 80vh;
+    background-color: rgb(255, 252, 246);
+    border-radius: 2vh;
+    box-shadow: 5px 5px 5px rgb(255, 252, 246);
+}
